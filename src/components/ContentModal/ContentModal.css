@@ -1,0 +1,91 @@
+.Content_Landscape {
+  object-fit: contain;
+  border-radius: 10px;
+}
+
+.Content_Potrait {
+  display: none;
+  object-fit: contain;
+  border-radius: 10px;
+}
+
+.tagline {
+  padding-bottom: 10px;
+  align-self: center;
+}
+
+.ContentModal {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+  width: 100%;
+  overflow-y: scroll;
+  scrollbar-width: none;
+}
+
+.ContentModal::-webkit-scrollbar {
+  display: none;
+}
+
+.Content__about {
+  padding: 10px;
+  width: 95%;
+  height: 90%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  font-weight: 300;
+}
+
+.Content_title {
+  height: 12%;
+  font-size: 5vw;
+  text-align: center;
+}
+
+.Content_desc {
+  display: flex;
+  height: 40%;
+  overflow-y: scroll;
+  padding: 15px;
+  border-radius: 20px;
+  scrollbar-width: none;
+  box-shadow: inset 0 0 5px #000;
+  text-align: justify;
+}
+
+.Content_desc::-webkit-scrollbar {
+  display: none;
+}
+
+@media (min-width: 835px) {
+  .Content_Landscape {
+    display: none;
+  }
+
+  .Content_Potrait {
+    display: flex;
+    width: 38%;
+  }
+
+  .ContentModal {
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 10px 0;
+  }
+
+  .Content__about {
+    width: 58%;
+    padding: 0;
+    height: 100%;
+  }
+
+  .Content_title {
+    font-size: 3.5vw;
+  }
+
+  .Content_desc {
+    font-size: 22px;
+  }
+}

@@ -1,0 +1,15 @@
+.header {
+  width: 100%;
+  font-weight: 100;
+  font-size: 5vh;
+  box-shadow: 0 1px 5px black;
+  cursor: pointer;
+  position: fixed;
+  padding: 0.5em 0;
+  text-transform: uppercase;
+  background-color: #39445a;
+  color: white;
+  text-align: center;
+  z-index: 9;
+  line-height: 1;
+}
